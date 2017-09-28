@@ -1,0 +1,155 @@
+<html>
+<head>
+    <script src="jquery-3.2.0.min.js"></script>
+    <link href="after_st_login.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="upppernav/h.css">
+   
+   
+    
+</head>
+<body style="margin-top:0px;">
+
+<div class="upper_body"></div>    
+<div class="main">
+<div class="main2">
+       <ul>
+            <li><input type ="button" class="bt1" value="Casual Leaves " id="bt_1"></li>
+            <li> <input type ="button" class="bt1" value="Pending Leaves" id="bt_2_2"></li>
+           
+           
+    </ul>    
+</div>
+<div class="leave_form">
+    <p class="app_date"><b>Application Date :</b> 
+  <span>  <p id="demo_day" class="app_date">/<p id="demo_month" class="app_date">/<p id="demo_year" class="app_date"></span>
+<script>
+var d = new Date();
+var d2 = new Date();
+var d3 = new Date();
+document.getElementById("demo_day").innerHTML = d.getDate();
+    document.getElementById("demo_month").innerHTML = d2.getMonth()+1;
+    document.getElementById("demo_year").innerHTML = d3.getFullYear();
+   
+    
+</script>
+    </p>
+    <p class="app_date"><b>Personal File Number</b><input type="text" > </p>
+    <p class="app_date"><b>Department : </b>Computer Science Engineering</p>
+    <p class="fill_form">Name : Shubham Yadav </p>
+    <p class="fill_form">Designation :Student </p>
+    <p class="fill_form">
+        
+    <label for="dateofbirth">Leave Applied for :  Date</label>
+<input type="date" name="dateofbirth" id="dateofbirth">
+    <label for="dateofbirth"> to </label>
+<input type="date" name="dateofbirth" id="dateofbirth"> 
+         
+        </p>
+    <p class="fill_form"> <label for="dateofbirth">Station Leave :  Date</label>
+<input type="date" name="dateofbirth" id="dateofbirth">
+    <label for="dateofbirth"> to </label>
+<input type="date" name="dateofbirth" id="dateofbirth"> 
+         
+     </p>
+    <p class="fill_form">Purpose : <input type="text" size="35" class="purpose"> </p>
+    <p class="fill_form"> Leave address, if going out of station <input type="text" size="35" class="purpose"></p>
+    <input type="checkbox" name="term" value="term">Sure you want to submit
+    
+    <input type ="button" class="bt1_1" value="Submit" >
+</div>
+<div class="view_status">view_status
+
+    
+<table>
+   <col width="50px">
+    <col width="150px">
+    <col width="80px">
+    <col width="80px">
+    <col width="200px">
+    <col width="80px">
+  <tr>
+    <th>Sno.</th>
+    <th>Name</th>
+    <th>From</th>
+    <th>To</th>
+    <th>Propose</th>
+    <th>Response</th>
+    <th>Response2</th>
+      <th>Response3</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+    <td>$100</td>
+      <td>$100</td>
+      <td>$100</td>
+      <td><button class="button2">Accept</button></td>
+      <td><button class="button3">Reject</button></td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+      <td>$100</td>
+      <td>$100</td>
+      <td>$100</td>
+  </tr>
+  <tr>
+     <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+      <td>$100</td>
+      <td>$100</td>
+      <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+      <td>$100</td>
+      <td>$100</td>
+      <td>$100</td>
+  </tr>
+</table>
+    
+    
+</div>
+<div class="remaining_leave">remaining_leave</div>
+<div class="sanction">sanction</div>
+</div>
+<script>
+$(document).ready(function()
+{
+$("#bt_1").click(function(){
+   $(".leave_form").show();
+   $(".view_status").hide();
+   $(".remaining_leave").hide();
+   $(".sanction").hide();
+  
+})
+$("#bt_2_2").click(function(){
+   $(".leave_form").hide();
+   $(".view_status").show();
+   $(".remaining_leave").hide();
+   $(".sanction").hide();
+   
+})
+$("#bt_3").click(function(){
+   $(".leave_form").hide();
+   $(".view_status").hide();
+   $(".remaining_leave").show();
+   $(".sanction").hide();
+   
+})
+$("#bt_4").click(function(){
+   $(".leave_form").hide();
+   $(".view_status").hide();
+   $(".remaining_leave").hide();
+   $(".sanction").show();
+   
+})
+});
+    </script>
+</body>
+</html>
